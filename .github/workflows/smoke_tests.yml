@@ -39,4 +39,4 @@ jobs:
                 apt install -y nodejs npm && \
                 apt-get -y install ruby-full && \
                 gem install rubocop && \
-                $GITHUB_WORKSPACE/share/smoke_tests/smoke_tests.sh'                
+                ./share/smoke_tests/smoke_tests.sh'                
