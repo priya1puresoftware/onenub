@@ -42,4 +42,4 @@ jobs:
                 npm run lint-client && npm run lint-server && \
                 npm install eslint-plugin-import@latest --save-dev && \
                 npm i -D eslint @typescript-eslint/eslint-plugin && \
-                ./share/smoke_tests/smoke_tests.sh'                
+                $GITHUB_WORKSPACE/share/smoke_tests/smoke_tests.sh'                
