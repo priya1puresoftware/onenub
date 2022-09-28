@@ -39,5 +39,6 @@ jobs:
                 apt install -y nodejs npm && \
                 apt-get -y install ruby-full && \
                 gem install rubocop && \
+                npm install eslint-plugin-import@latest --save-dev && \
                 ./share/smoke_tests/smoke_tests.sh'
                 
