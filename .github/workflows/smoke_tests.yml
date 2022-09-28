@@ -39,7 +39,4 @@ jobs:
                 apt install -y nodejs npm && \
                 apt-get -y install ruby-full && \
                 gem install rubocop && \
-                npm run lint-client && npm run lint-server && \
-                npm install eslint-plugin-import@latest --save-dev && \
-                npm i -D eslint @typescript-eslint/eslint-plugin && \
                 $GITHUB_WORKSPACE/share/smoke_tests/smoke_tests.sh'                
