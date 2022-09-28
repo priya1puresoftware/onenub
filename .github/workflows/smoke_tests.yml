@@ -41,6 +41,6 @@ jobs:
                 gem install rubocop && \
                 npm install eslint-plugin-import@latest --save-dev && \
                 npm -g install eslint && \
-                npm eslint-config-opennebula --save-dev && \
-                npm eslint-config-standard --save-dev && \
+                npm -g eslint-config-opennebula --save-dev && \
+                npm -g eslint-config-standard --save-dev && \
                 ./share/smoke_tests/smoke_tests.sh' 
