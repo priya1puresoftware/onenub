@@ -35,7 +35,7 @@ jobs:
                docker run --rm -v ${{ github.workspace }}:/ws:rw --workdir=/ws \
                arm64v8/ubuntu:20.04 \
                bash -exc 'apt-get update && apt-get -y install curl git && \
-                apt-get install -y language-pack-en && export LC_CTYPE=en_US.UTF-8 && apt-get -y install locales && \
+                ln -fs /usr/share/zoneinfo/America/New_York /etc/localtime && export DEBIAN_FRONTEND=noninteractive && apt-get install -y tzdata && dpkg-reconfigure --frontend noninteractive tzdata && \
                 apt install -y nodejs npm && \
                 apt-get -y install ruby-full && \
                 gem install rubocop && \
